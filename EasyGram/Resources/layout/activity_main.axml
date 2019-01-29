@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_controls">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter URL Post"
+                android:singleLine="true"
+                android:id="@+id/txt_url" />
+            <Button
+                android:text="Download!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_url"
+                android:id="@+id/btn_download" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="450px"
+        android:layout_below="@id/layout_controls"
+        android:id="@+id/layout_caption">
+        <ScrollView
+            android:padding="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Caption POST"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_caption" />
+        </ScrollView>
+    </FrameLayout>
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+        android:layout_below="@id/layout_caption"
+        android:background="#f2f2f2"
+        android:id="@+id/layout_ads">
+    </FrameLayout>
+
+</RelativeLayout>
