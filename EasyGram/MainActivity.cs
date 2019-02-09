@@ -17,7 +17,7 @@ using Android.Content;
 namespace EasyGram
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme",MainLauncher =true, ScreenOrientation = ScreenOrientation.Portrait)]
-    public class MainActivity : Activity
+    public class MainActivity : AppCompatActivity
     {
         static readonly int INTERNET = 0;
         static readonly int READ_EXTERNAL = 1;
